@@ -2,7 +2,7 @@
 
 int main()
 {
-   // Creating of few objects
+   // Creating a few objects
    DC_Motor::Initialize test1(1, 1, "uno");
 
    // split of set_level func out of construct for safety reasons
@@ -25,11 +25,11 @@ int main()
 
    // preparation of data to transfer
    char data1[] = "[23,94,-89,-2,3]";
-   // creation of vector that will contain valus on client side
+   // creation of vector that will contain values on client side
    std::vector<int> vi;
    // encapsulating data from string to vector
    DC_Motor::stringToInt(data1, vi);
-   std::cout << "data1: " << data1;
+   std::cout << "data1: " << data1 << std::endl;
 
    // reading data from objects and preparing another data to send
    std::string senddata = stringFromLevels(test1, test2, test3, test4);
