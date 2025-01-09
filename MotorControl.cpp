@@ -115,7 +115,7 @@ namespace DC_Motor
         std::cout << "Initializing Engine: " << get_Name() << std::endl;
     }
 #endif
-     /** \brief Constructor of Initialize class
+    /** \brief Constructor of Initialize class
      *
      *  Constructor of Initialize class:
      *  @param  NULL Does not take any parameters
@@ -192,7 +192,6 @@ namespace DC_Motor
         std::copy(vecObjc.begin(), vecObjc.end() - 1, std::ostream_iterator<int>(oss, ","));
         oss << vecObjc.back();
         std::string str = "[" + oss.str() + "]";
-        std::cout << "from in " << str << std::endl;
         return str;
     }
 
@@ -214,7 +213,6 @@ namespace DC_Motor
         std::copy(vecObjc.begin(), vecObjc.end() - 1, std::ostream_iterator<int>(oss, ","));
         oss << vecObjc.back();
         std::string str = "[" + oss.str() + "]";
-        std::cout << "from in " << str << std::endl;
         return str;
     }
 
@@ -238,7 +236,6 @@ namespace DC_Motor
         std::copy(vecObjc.begin(), vecObjc.end() - 1, std::ostream_iterator<int>(oss, ","));
         oss << vecObjc.back();
         std::string str = "[" + oss.str() + "]";
-        std::cout << "from in " << str << std::endl;
         return str;
     }
 
@@ -263,7 +260,6 @@ namespace DC_Motor
         std::copy(vecObjc.begin(), vecObjc.end() - 1, std::ostream_iterator<int>(oss, ","));
         oss << vecObjc.back();
         std::string str = "[" + oss.str() + "]";
-        std::cout << "from in " << str << std::endl;
         return str;
     }
 
@@ -322,12 +318,6 @@ namespace DC_Motor
         }
 
         vecOfInts.push_back(isNegative ? -tempNum : tempNum);
-
-        for (int i = 0; i < vecOfInts.size(); ++i)
-        {
-            std::cout << vecOfInts[i] << " ";
-        }
-        std::cout << std::endl;
     }
 
     /** \brief Function converts from string to vector of intigers
@@ -369,10 +359,5 @@ namespace DC_Motor
         }
 
         vecOfInts.push_back(isNegative ? -tempNum : tempNum);
-
-        for (int i = 0; i < vecOfInts.size(); ++i)
-        {
-            std::cout << vecOfInts[i] << " ";
-        }
     }
 }
